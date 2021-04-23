@@ -1,6 +1,6 @@
 package com.prakash.xyz;
 
-public class TouristTicket {
+public   class TouristTicket extends Ticket {
     String hotelAddress;
     String selectedTouristLocation;
 
@@ -18,5 +18,10 @@ public class TouristTicket {
     }
     public String removeTouristLocations(String locations) {
         return "abcd";
+    }
+
+    @Override
+    public  int getFlightDuration(){
+        return departureDateTime-arrivalDateTime;
     }
 }
